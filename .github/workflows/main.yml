@@ -75,6 +75,8 @@ jobs:
         # Одновременный билд и пуш образа в Docker Hub
         uses: docker/build-push-action@v4
         with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
           # Параметр context: ./backend/ указывает, что нужный Dockerfile
           # находится в ./backend/
           context: ./backend/
@@ -86,6 +88,3 @@ jobs:
           # устанавливаем тег latest, чтобы потом
           # на сервере и в docker-compose.yml не указывать версию
           tags: lacolle87/taski_backend:latest
-          with:
-            username: ${{ secrets.DOCKER_USERNAME }}
-            password: ${{ secrets.DOCKER_PASSWORD }}
