@@ -1,7 +1,7 @@
 # Файл main.yml
-# Имя workflow
+# Имя workflows
 name: Main Taski Workflow
-# Перечень событий-триггеров, при которых должен запускаться workflow
+# Перечень событий-триггеров, при которых должен запускаться workflows
 on:
   # Событие push возникает,
   # когда изменения исходного кода приходят на сервер GitHub
@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # На GitHub Actions есть готовые описания шагов,
-      # их можно использовать в своих workflow.
+      # их можно использовать в своих workflows.
       # Применим готовое описание шага для получения исходного кода
       - name: Check out repository code  # Имя шага задаём сами
         uses: actions/checkout@v3  # Берём готовое решение из библиотеки GitHub Actions
