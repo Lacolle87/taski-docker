@@ -129,3 +129,9 @@ dmypy.json
 .pyre/
 
 frontend/node_modules
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/inspectionProfiles/profiles_settings.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/taski-docker.iml
+/.idea/vcs.xml
